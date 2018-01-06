@@ -1,8 +1,8 @@
-import { LuaArray } from "@wowts/lua";
+import { LuaMap } from "@wowts/lua";
 export interface ActionButton {
     GetAttribute(attribute: "action"): number;
 }
 declare const actionButtons: {
-    buttonRegistry: LuaArray<ActionButton>;
+    buttonRegistry: LuaMap<ActionButton, boolean>;
 };
 export default actionButtons;
